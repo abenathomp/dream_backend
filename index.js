@@ -17,7 +17,7 @@ const app = express();
 app.use(express.json());
 
 // create a variable for the port number
-const PORT = 4000;
+const PORT= process.env.PORT ?? 4000;
 
 // create a route to handle the GET request
 app.get("/",(request, response)=>{
